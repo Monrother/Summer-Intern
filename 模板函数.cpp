@@ -40,7 +40,8 @@ void printVector(const vector<int>& vec) {
 }
 
 // Êä³öÒ»¸ö¾ØÕó
-void printMatrix(const vector<vector<int> >& matrix) {
+template<class T>
+void printMatrix(const vector<vector<T> >& matrix) {
 	int m = matrix.size();
 	if (m == 0)
 		return;
