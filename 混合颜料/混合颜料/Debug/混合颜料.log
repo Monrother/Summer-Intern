@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\codes\projects\暑期实习\混合颜料\混合颜料\main.cpp(30): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+  混合颜料.vcxproj -> D:\Codes\Projects\暑期实习\混合颜料\Debug\混合颜料.exe
+  混合颜料.vcxproj -> D:\Codes\Projects\暑期实习\混合颜料\Debug\混合颜料.pdb (Partial PDB)

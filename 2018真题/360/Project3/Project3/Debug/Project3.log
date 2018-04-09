@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\codes\projects\暑期实习\2018真题\360\project3\project3\main.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+d:\codes\projects\暑期实习\2018真题\360\project3\project3\main.cpp(34): warning C4018: “<”: 有符号/无符号不匹配
+  Project3.vcxproj -> D:\Codes\Projects\暑期实习\2018真题\360\Project3\Debug\Project3.exe
+  Project3.vcxproj -> D:\Codes\Projects\暑期实习\2018真题\360\Project3\Debug\Project3.pdb (Partial PDB)
