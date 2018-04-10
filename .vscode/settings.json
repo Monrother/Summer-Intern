@@ -1,0 +1,36 @@
+{
+    "files.defaultLanguage": "cpp",
+
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "editor.formatOnType": true,
+    "editor.snippetSuggestions": "top",
+
+    "files.associations": {
+        "list": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "xstring": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp",
+        "initializer_list": "cpp",
+        "xutility": "cpp",
+        "unordered_set": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.autoGuessEncoding": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, IndentWidth: 4}"
+}

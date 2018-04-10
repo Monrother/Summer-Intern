@@ -54,16 +54,59 @@ void printMatrix(const vector<vector<T> >& matrix) {
 	}
 }
 
+
 // 整型转字符串
 string int2str(int num) {
 	string res;
 	if (num == 0)
 		res = "0";
 	while (num != 0) {
-		res = (num % 10) + res;
+		res = char(num % 10 + '0') + res;
 		num /= 10;
 	}
 	return res;
+}
+
+
+// 判断一个字符串是否回文
+bool isPalindrome(const string &s, int left = 0, int right = -1){
+	// params:
+	//	s: 要判断的字符串
+	//	left: 子串的最左端字符的索引，如果没有设置为从字符串开头开始
+	//	right: 子串的最右端字符的索引，如果没有设置为到字符串结尾
+	if (right == -1){
+		right = s.length() - 1;
+	}
+	while(left < right){
+		if (s[left++] != s[right--])
+			return false;
+	}
+	return true;
+}
+
+
+// 创建回文字符串矩阵
+void Spread(const string &s, vector<vector<int>> &dp, int left, int right) {
+	// 根据字符串s设置dp中的元素，执行完毕之后dp[i][j]为1表示s[i]到s[j]为回文字符串，dp[i][j]为0表示不是回文字符串。
+	int len= s.length();
+    while(left >= 0 && right < len){
+        if(s[left]==s[right]){
+            dp[left][right] = 1;
+            left--;
+            right++;
+        }
+        else
+            break;
+    }
+}
+
+
+void PalindromeMat(const string& s, vector<vector<int> >& dp) {
+    int len = s.length();
+    for (int i = 0; i < len; i++) {
+        Spread(s, dp, i, i);
+        Spread(s, dp, i, i + 1);
+    }
 }
 
 
